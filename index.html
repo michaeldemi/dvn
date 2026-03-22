@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DVN Consulting | Strategy & Execution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "error-container": "#ffdad6",
+            "on-error": "#ffffff",
+            "surface-dim": "#d8dadc",
+            "surface-tint": "#565e74",
+            "surface": "#f7f9fb",
+            "inverse-surface": "#2d3133",
+            "secondary": "#515f74",
+            "on-background": "#191c1e",
+            "on-surface": "#191c1e",
+            "surface-variant": "#e0e3e5",
+            "secondary-fixed": "#d5e3fd",
+            "tertiary": "#000000",
+            "inverse-on-surface": "#eff1f3",
+            "secondary-container": "#d5e3fd",
+            "tertiary-fixed": "#ffdead",
+            "tertiary-fixed-dim": "#e6c188",
+            "surface-container-highest": "#e0e3e5",
+            "on-primary-container": "#7c839b",
+            "on-secondary": "#ffffff",
+            "background": "#f7f9fb",
+            "on-surface-variant": "#45464d",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#9f7f4c",
+            "tertiary-container": "#281900",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed": "#131b2e",
+            "on-tertiary-fixed-variant": "#5c4215",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#eceef0",
+            "primary-container": "#131b2e",
+            "outline-variant": "#c6c6cd",
+            "primary": "#000000",
+            "on-error-container": "#93000a",
+            "primary-fixed": "#dae2fd",
+            "secondary-fixed-dim": "#b9c7e0",
+            "surface-container-low": "#f2f4f6",
+            "primary-fixed-dim": "#bec6e0",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#e6e8ea",
+            "on-tertiary-fixed": "#281900",
+            "on-secondary-container": "#57657b",
+            "outline": "#76777d",
+            "inverse-primary": "#bec6e0",
+            "surface-bright": "#f7f9fb",
+            "on-primary-fixed-variant": "#3f465c",
+            "on-secondary-fixed": "#0d1c2f",
+            "on-secondary-fixed-variant": "#3a485c"
+          },
+          fontFamily: {
+            "headline": ["Cormorant Garamond", "serif"],
+            "display": ["Cormorant Garamond", "serif"],
+            "body": ["Manrope", "sans-serif"],
+            "label": ["Manrope", "sans-serif"],
+            "ui": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .editorial-shadow {
+      box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 12px 40px -8px rgba(15, 23, 42, 0.08);
+    }
+    .executive-input:focus {
+      outline: none;
+      border-bottom-color: #9f7f4c;
+    }
+    .stagger-border {
+      position: relative;
+    }
+    .stagger-border::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 40px;
+      height: 40px;
+      border-top: 2px solid #9f7f4c;
+      border-left: 2px solid #9f7f4c;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed" id="top">
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+    <div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+      <a href="#top" class="text-2xl font-semibold tracking-tighter text-slate-950 dark:text-white font-headline">D | V | N Consulting</a>
+      <div class="hidden md:flex items-center space-x-10"></div>
+      <div class="flex items-center space-x-6">
+        <a href="#booking" class="bg-on-primary-fixed text-on-primary px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all duration-200">REQUEST A BRIEFING</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img alt="Executive Boardroom" class="w-full h-full object-cover grayscale opacity-40 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv0VPJuqYxdYQTDHu_vg255fTU3a_neooErN8_TPjOdCDr9D1P4-yUGZteguYJyhyk3bbBdN7JMfQbfBwUNd5r8IXucyw3ghmrwARwMBK8fQ88yCtzST-EdpCiIBTMzMxaiuk_9_Qf4ptyzprDtSsN34-5fom9bb24vvcK0Q0I1sh2SIavnQv2K4HQZeryLiI-HgcckQ8sWv3Aq4wxnLcjyWMh5mefT4iuJYoT477g40geJ5IVGlcSaF2NO9P24nQwAcfQpmIpng">
+        <div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface"></div>
+      </div>
+      <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
+        <span class="inline-block font-label text-xs uppercase tracking-[0.3em] text-on-primary-container mb-6">Strategic Excellence &amp; Transformation</span>
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-on-primary-fixed leading-[1.1] tracking-tight mb-10">
+          Accelerating Revenue.<br>
+          <span class="italic font-light">Driving Relentless Execution.</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg md:text-xl text-secondary font-light leading-relaxed mb-12">
+          We engineer effective business transformations for global enterprises through bespoke advisory and surgical operational precision.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+          <a href="#booking" class="bg-on-primary-fixed text-on-primary px-10 py-4 text-sm font-bold tracking-widest uppercase editorial-shadow hover:bg-slate-800 transition-all active:scale-95">Request A Briefing</a>
+          <a class="group flex items-center gap-3 text-on-tertiary-container font-semibold tracking-widest text-xs uppercase transition-all" href="#services">
+            Our Expertise
+            <span class="w-8 h-px bg-on-tertiary-container group-hover:w-12 transition-all"></span>
+          </a>
+        </div>
+      </div>
+      <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+        <span class="font-label text-[10px] uppercase tracking-[0.4em] rotate-180 [writing-mode:vertical-lr]">Scroll</span>
+        <div class="w-px h-12 bg-on-surface-variant"></div>
+      </div>
+    </section>
+
+    <section class="w-full bg-surface-container-lowest border-t border-outline-variant/20">
+      <div class="px-8 lg:px-20 py-20">
+        <div class="max-w-7xl mx-auto">
+          <div class="max-w-3xl mb-14">
+            <span class="uppercase tracking-[0.3em] text-on-tertiary-container font-label text-xs mb-6 block">Operational Track Record</span>
+            <h2 class="font-display text-5xl lg:text-7xl text-on-primary-fixed mb-8 leading-[1.1] font-light">
+              High Stakes. <span class="italic">High Precision.</span>
+            </h2>
+            <p class="font-ui text-lg leading-relaxed text-on-surface-variant font-light max-w-2xl">
+              Trusted by global enterprises to navigate operational complexity and drive measurable EBITDA expansion.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-0 border-l border-t border-outline-variant/20">
+            <div class="aspect-[4/3] border-r border-b border-outline-variant/20 bg-surface flex items-center justify-center p-6">
+              <div class="w-full h-full border border-dashed border-outline-variant/40 bg-surface-container-low flex items-center justify-center">
+                <span class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant">Logo Placeholder 01</span>
+              </div>
+            </div>
+            <div class="aspect-[4/3] border-r border-b border-outline-variant/20 bg-surface flex items-center justify-center p-6">
+              <div class="w-full h-full border border-dashed border-outline-variant/40 bg-surface-container-low flex items-center justify-center">
+                <span class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant">Logo Placeholder 02</span>
+              </div>
+            </div>
+            <div class="aspect-[4/3] border-r border-b border-outline-variant/20 bg-surface flex items-center justify-center p-6">
+              <div class="w-full h-full border border-dashed border-outline-variant/40 bg-surface-container-low flex items-center justify-center">
+                <span class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant">Logo Placeholder 03</span>
+              </div>
+            </div>
+            <div class="aspect-[4/3] border-r border-b border-outline-variant/20 bg-surface flex items-center justify-center p-6">
+              <div class="w-full h-full border border-dashed border-outline-variant/40 bg-surface-container-low flex items-center justify-center">
+                <span class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant">Logo Placeholder 04</span>
+              </div>
+            </div>
+            <div class="aspect-[4/3] border-r border-b border-outline-variant/20 bg-surface flex items-center justify-center p-6 col-span-2 md:col-span-1">
+              <div class="w-full h-full border border-dashed border-outline-variant/40 bg-surface-container-low flex items-center justify-center">
+                <span class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant">Logo Placeholder 05</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-6rem)]">
+      <div class="flex flex-col justify-center px-8 lg:px-20 py-16 bg-surface-container-lowest border-r border-outline-variant/20">
+        <div class="max-w-xl">
+          <span class="uppercase tracking-[0.3em] text-on-tertiary-container font-label text-xs mb-6 block">About Us</span>
+          <h2 class="font-display text-5xl lg:text-7xl text-on-primary-fixed mb-12 leading-[1.1] font-light">
+            Ideas don't scale. <span class="italic">Execution</span> does.
+          </h2>
+          <div class="space-y-8">
+            <p class="font-ui text-lg leading-relaxed text-on-surface-variant font-light">
+              This firm was founded on a hard-learned reality: complex B2B and industrial companies rarely struggle from a lack of ambition. They struggle because consistently executing that ambition is incredibly difficult.
+            </p>
+            <p class="font-ui text-base leading-relaxed text-on-surface-variant/80">
+              Having led complex organizations from the inside, we don't deal in theoretical frameworks. We bring an operator's lens to your strategy, sales growth, and operational performance. We partner with C-suite executives and Private Equity investors who demand practical, battle-tested guidance to align their leadership teams and accelerate results.
+            </p>
+          </div>
+          <div class="mt-16 pt-12 border-t border-outline-variant/30 grid grid-cols-2 gap-8">
+            <div>
+              <div class="text-3xl font-headline text-on-primary-fixed mb-1">15+</div>
+              <div class="uppercase tracking-widest text-on-surface-variant font-label text-[10px]">Years of Influence</div>
+            </div>
+            <div>
+              <div class="text-3xl font-headline text-on-primary-fixed mb-1">240</div>
+              <div class="uppercase tracking-widest text-on-surface-variant font-label text-[10px]">Global Partners</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative min-h-[400px] lg:min-h-full overflow-hidden bg-primary-container">
+        <img alt="Executive team" class="absolute inset-0 w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJJxdhzQesbS0opvisM-LW4itN_7g92w_mOdDoX3XWta1rM-I4lS2445bqZJQUW-e5Pg_gsGxbdgR1aDK62EOFbFd966EXHQ1zc1YFmazWDpQprQf7I_7dDshTspSjBLEwAG06eCuM6Pd39a5ny59-LfDOgbSHe1_GDXcrwTmrX2Ndr_EOCHAX_hFGaVNrH69P2ws5iLz87tqsVHXEVARb6gKb6HP-0ITskUhNleYTx6tpRz8K9EqK38KK9D20GytfWzfoiQVRVQ">
+        <div class="absolute inset-0 bg-gradient-to-t from-primary-container/60 to-transparent"></div>
+        <div class="absolute bottom-12 left-12 right-12">
+          <div class="bg-white/5 backdrop-blur-xl p-8 border border-white/10 max-w-sm">
+            <div class="font-display italic text-white text-2xl mb-4 leading-snug">
+              "Strategy is not a document; it is a discipline of choice."
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-[1px] w-8 bg-on-tertiary-fixed-variant"></div>
+              <div class="text-white/70 font-label uppercase tracking-widest text-[10px]">Managing Partner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="pt-24 pb-24">
+      <header class="max-w-7xl mx-auto px-8 mb-20">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+          <div class="max-w-2xl">
+            <span class="uppercase tracking-[0.3em] text-on-tertiary-container font-semibold block mb-4 text-xs">Core Capabilities</span>
+            <h2 class="text-5xl md:text-7xl font-headline tracking-tight text-on-primary-fixed italic">Our Expertise</h2>
+          </div>
+          <div class="hidden md:block w-px h-24 bg-outline-variant/30 self-center mx-12"></div>
+          <p class="max-w-md text-on-surface-variant font-light leading-relaxed">
+            Bespoke strategic interventions designed for global enterprises navigating complex market shifts. We transform institutional challenges into competitive advantage.
+          </p>
+        </div>
+      </header>
+
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-l border-t border-outline-variant/20">
+          <div class="group relative p-12 md:p-16 border-r border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
+            <div class="mb-8 flex items-center justify-between">
+              <div class="w-12 h-12 flex items-center justify-center bg-surface-container-highest rounded-sm">
+                <span class="material-symbols-outlined text-on-tertiary-container" style="font-size: 32px;">account_balance</span>
+              </div>
+              <span class="font-headline text-on-tertiary-container/30 text-4xl italic">01</span>
+            </div>
+            <h3 class="text-3xl font-headline text-on-primary-fixed mb-6 group-hover:text-on-tertiary-container transition-colors">Growth Strategy &amp; Execution</h3>
+            <p class="font-ui text-sm leading-loose text-on-surface-variant max-w-sm tracking-wide">
+              Transform high-level vision into measurable market execution. We align your leadership team around a precise roadmap and KPI architecture to capture market share, enter new markets, and drive scalable, risk-mitigated growth.
+            </p>
+          </div>
+
+          <div class="group relative p-12 md:p-16 border-r border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
+            <div class="mb-8 flex items-center justify-between">
+              <div class="w-12 h-12 flex items-center justify-center bg-surface-container-highest rounded-sm">
+                <span class="material-symbols-outlined text-on-tertiary-container" style="font-size: 32px;">monitoring</span>
+              </div>
+              <span class="font-headline text-on-tertiary-container/30 text-4xl italic">02</span>
+            </div>
+            <h3 class="text-3xl font-headline text-on-primary-fixed mb-6 group-hover:text-on-tertiary-container transition-colors">Sales Performance &amp; Revenue Acceleration</h3>
+            <p class="font-ui text-sm leading-loose text-on-surface-variant max-w-sm tracking-wide">
+              Architect a high-performing, predictable revenue engine. From organizational design and pricing strategy to rigorous pipeline discipline, we build the structural frameworks necessary to accelerate top-line growth and expand margins.
+            </p>
+          </div>
+
+          <div class="group relative p-12 md:p-16 border-r border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
+            <div class="mb-8 flex items-center justify-between">
+              <div class="w-12 h-12 flex items-center justify-center bg-surface-container-highest rounded-sm">
+                <span class="material-symbols-outlined text-on-tertiary-container" style="font-size: 32px;">diversity_3</span>
+              </div>
+              <span class="font-headline text-on-tertiary-container/30 text-4xl italic">03</span>
+            </div>
+            <h3 class="text-3xl font-headline text-on-primary-fixed mb-6 group-hover:text-on-tertiary-container transition-colors">Operational Performance &amp; Service Growth</h3>
+            <p class="font-ui text-sm leading-loose text-on-surface-variant max-w-sm tracking-wide">
+              Maximize the yield of your operations and monetize your install base. We drive EBITDA expansion by optimizing capacity, streamlining field productivity, and unlocking hidden revenue streams within your existing service contracts.
+            </p>
+          </div>
+
+          <div class="group relative p-12 md:p-16 border-r border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors duration-500">
+            <div class="mb-8 flex items-center justify-between">
+              <div class="w-12 h-12 flex items-center justify-center bg-surface-container-highest rounded-sm">
+                <span class="material-symbols-outlined text-on-tertiary-container" style="font-size: 32px;">diamond</span>
+              </div>
+              <span class="font-headline text-on-tertiary-container/30 text-4xl italic">04</span>
+            </div>
+            <h3 class="text-3xl font-headline text-on-primary-fixed mb-6 group-hover:text-on-tertiary-container transition-colors">Executive Advisory &amp; Leadership Alignment</h3>
+            <p class="font-ui text-sm leading-loose text-on-surface-variant max-w-sm tracking-wide">
+              An objective, high-level sounding board for the C-suite. We provide strategic oversight, organizational design, and targeted coaching to ensure your executive team remains aligned and equipped to navigate complex growth phases.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="booking" class="max-w-7xl mx-auto px-8 pb-24">
+      <div class="bg-surface-container-lowest overflow-hidden shadow-2xl shadow-slate-200/50">
+        <div class="p-12 md:p-16">
+          <div class="mb-12">
+            <h2 class="font-headline text-5xl md:text-7xl text-on-primary-fixed mb-4">Initiate Engagement</h2>
+            <div class="w-12 h-1 bg-on-tertiary-container"></div>
+          </div>
+
+          <form action="#" class="space-y-10 font-ui">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+              <div>
+                <label class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Name</label>
+                <input class="executive-input w-full bg-transparent border-0 border-b border-outline-variant/40 py-3 text-on-primary-fixed placeholder:text-outline-variant/60 focus:ring-0 transition-all rounded-none" placeholder="Full Name" type="text">
+              </div>
+              <div>
+                <label class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Corporate Email</label>
+                <input class="executive-input w-full bg-transparent border-0 border-b border-outline-variant/40 py-3 text-on-primary-fixed placeholder:text-outline-variant/60 focus:ring-0 transition-all rounded-none" placeholder="example@firm.com" type="email">
+              </div>
+            </div>
+
+            <div>
+              <label class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Project Brief</label>
+              <textarea class="executive-input w-full bg-transparent border-0 border-b border-outline-variant/40 py-3 text-on-primary-fixed placeholder:text-outline-variant/60 focus:ring-0 transition-all resize-none rounded-none" placeholder="Define the scope of our engagement..." rows="3"></textarea>
+            </div>
+
+            <div class="flex items-center justify-between pt-6">
+              <p class="text-xs text-on-surface-variant/60 italic max-w-xs">Our partners will review your inquiry and respond within one business day.</p>
+              <button class="group relative bg-on-primary-fixed text-on-primary px-10 py-4 font-bold tracking-[0.2em] text-xs uppercase transition-all duration-300 overflow-hidden rounded-[4px]" type="submit">
+                <span class="relative z-10">SUBMIT REQUEST</span>
+                <span class="absolute inset-0 bg-on-tertiary-container translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-950 dark:bg-black w-full border-t border-slate-800 dark:border-slate-900">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-16 max-w-7xl mx-auto">
+      <div class="space-y-6">
+        <div class="text-xl font-bold text-white font-headline">DVN Consulting</div>
+        <p class="text-slate-400 text-sm leading-relaxed max-w-xs font-body">
+          Bespoke consultancy for the next generation of global market leaders.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-8">
+        <div class="flex flex-col space-y-4">
+          <span class="text-slate-100 uppercase tracking-widest text-[10px] font-bold">Services</span>
+          <a class="text-slate-400 hover:text-white transition-colors text-sm font-body hover:underline decoration-amber-500 underline-offset-4" href="#services">Transformation</a>
+          <a class="text-slate-400 hover:text-white transition-colors text-sm font-body hover:underline decoration-amber-500 underline-offset-4" href="#services">Capital Advisory</a>
+          <a class="text-slate-400 hover:text-white transition-colors text-sm font-body hover:underline decoration-amber-500 underline-offset-4" href="#services">Operations</a>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <span class="text-slate-100 uppercase tracking-widest text-[10px] font-bold">Network</span>
+          <a class="text-slate-400 hover:text-white transition-colors text-sm font-body hover:underline decoration-amber-500 underline-offset-4" href="#">LinkedIn</a>
+          <a class="text-slate-400 hover:text-white transition-colors text-sm font-body hover:underline decoration-amber-500 underline-offset-4" href="#about">Insights</a>
+          <a class="text-slate-400 hover:text-white transition-colors text-sm font-body hover:underline decoration-amber-500 underline-offset-4" href="#">Legal Notice</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-between items-start md:items-end">
+        <a href="#booking" class="bg-white text-slate-950 px-8 py-3 text-xs font-bold tracking-widest uppercase hover:bg-amber-400 transition-colors">CONTACT PARTNER</a>
+        <div class="text-slate-500 text-[10px] uppercase tracking-widest mt-12 md:mt-0">
+          &copy; 2026 DVN Consulting. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
