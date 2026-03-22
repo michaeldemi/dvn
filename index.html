@@ -80,6 +80,11 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
+    :root {
+      --logo-letter: #3f4b5a;
+      --logo-divider: #c18548;
+      --logo-wordmark: #4f5358;
+    }
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
     }
@@ -103,12 +108,44 @@
       border-top: 2px solid #9f7f4c;
       border-left: 2px solid #9f7f4c;
     }
+    .brand-mark {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.15em;
+      font-family: "Cormorant Garamond", serif;
+      letter-spacing: 0.01em;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .brand-mark .brand-initial {
+      color: var(--logo-letter);
+      font-weight: 500;
+    }
+    .brand-mark .brand-divider {
+      color: var(--logo-divider);
+      font-weight: 600;
+      margin: 0 0.1em;
+    }
+    .brand-mark .brand-word {
+      color: var(--logo-wordmark);
+      margin-left: 0.25em;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed" id="top">
   <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
     <div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-      <a href="#top" class="text-2xl font-semibold tracking-tighter text-slate-950 dark:text-white font-headline">M | D | N Consulting</a>
+      <a href="#top" class="text-2xl md:text-[2.1rem] tracking-tight" aria-label="MDN Consulting">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-initial">M</span>
+          <span class="brand-divider">|</span>
+          <span class="brand-initial">D</span>
+          <span class="brand-divider">|</span>
+          <span class="brand-initial">N</span>
+          <span class="brand-word">Consulting</span>
+        </span>
+      </a>
       <div class="hidden md:flex items-center space-x-10"></div>
       <div class="flex items-center space-x-6">
         <a href="#booking" class="bg-on-primary-fixed text-on-primary px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all duration-200">REQUEST A BRIEFING</a>
@@ -347,10 +384,19 @@
   <footer class="bg-slate-950 dark:bg-black w-full border-t border-slate-800 dark:border-slate-900">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-8 py-16 max-w-7xl mx-auto">
       <div class="space-y-6">
-        <!-- <div class="text-xl font-bold text-white font-headline">M | D | N Consulting</div>
+        <div class="text-xl md:text-[1.75rem] leading-none">
+          <span class="brand-mark" aria-label="MDN Consulting">
+            <span class="brand-initial">M</span>
+            <span class="brand-divider">|</span>
+            <span class="brand-initial">D</span>
+            <span class="brand-divider">|</span>
+            <span class="brand-initial">N</span>
+            <span class="brand-word">Consulting</span>
+          </span>
+        </div>
         <p class="text-slate-400 text-sm leading-relaxed max-w-xs font-body">
           Bespoke consultancy for the next generation of global market leaders.
-        </p> -->
+        </p>
         <div class="text-slate-500 text-[10px] uppercase tracking-widest mt-12 md:mt-0">
           &copy; 2026 M | D | N Consulting. All rights reserved.
         </div>
